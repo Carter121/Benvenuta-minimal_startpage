@@ -20,10 +20,10 @@
 	/* --main-fg:#ebdbb2;   */
 	/* --main-fg2:#d65d0e;   */
 	/* tokyonight */
-	--main-bg: #1a1b26;
-	--main-bg2: #1f2335;
-	--main-fg: #c0caf5;
-	--main-fg2: #7dcfff;
+	/* --main-bg: #1a1b26; */
+	/* --main-bg2: #1f2335; */
+	/* --main-fg: #c0caf5; */
+	/* --main-fg2: #7dcfff; */
 	/* nord */
 	/* --main-bg:#2e3440;    */
 	/* --main-bg2:#3b4252; */
@@ -34,6 +34,12 @@
 	/* --main-bg2:#1a1a1a; */
 	/* --main-fg:#b4b4b4; */
 	/* --main-fg2:#00ff00; */
+
+	/** Custom Colors */
+	--main-bg: #282c34;
+	--main-bg2: #3b4048;
+	--main-fg: #bbbbbb;
+	--main-fg2: #dddddd;
 }
 
 * {
@@ -126,6 +132,13 @@ hr {
 	background-color: var(--main-bg2);
 	font-size: 18px;
 	font-family: "Noto Sans", "Noto Serif", "Fira Code", Courier, monospace;
+	color: var(--main-fg);
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button {
@@ -135,15 +148,21 @@ hr {
 	background-color: var(--main-bg2);
 	color: var(--main-fg);
 	font-size: 18px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
 }
 
-#toggleButton {
+.search_div {
 	outline: none;
 	border: none;
 	border-radius: 25px;
 	background-color: var(--main-bg2);
 	color: var(--main-fg);
 	font-size: 18px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
 }
 
 a {
